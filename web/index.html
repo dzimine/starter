@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <!-- TODO: change the title -->
+   <title>Starter</title>
+
+   <!-- Le styles -->
+   <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+   <style type="text/css">
+      body {
+         padding-top: 60px;
+         padding-bottom: 40px;
+      }
+      .sidebar-nav {
+         padding: 9px 0;
+      }
+   </style>
+   <link href="lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+   <link rel="stylesheet" href="main.css">
+   <!-- libraries  -->
+   <script src="lib/jquery/jquery.js"></script>
+   <script src="lib/bootstrap/js/bootstrap.js"></script>
+   <script src="lib/angular/angular.js"></script>
+   <!-- TODO: Choose between d3 v3 or v2 here -->
+      <script src="lib/d3.v3/d3.v3.js"></script>
+      <!--script src="lib/d3.v2/d3.v2.js"></script-->
+   <!-- Application scripts  -->
+   <script src="main.js"></script>
+   <script src="apps/changeme.js"></script>
+</head>
+
+<body ng-app="main" ng-controller="NavCtrl">
+
+<div class="navbar navbar-inverse navbar-fixed-top" >
+   <div class="navbar-inner">
+      <div class="container-fluid">
+         <a class="brand" href="#">Project Starter</a>
+      </div>
+   </div>
+</div>
+
+<div class="container-fluid" >
+
+   <div class="row-fluid" ng-view>
+      <!-- Angular views SHOWN HERE -->
+   </div>
+
+   <hr>
+   <footer>
+      <p>&copy; DZ 2013</p>
+   </footer>
+</div><!--/.fluid-container-->
+
+</body>
+</html>
